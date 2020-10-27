@@ -1,8 +1,5 @@
 const isHasPropety = (str, obj) => {
-    for (let key in obj) {
-        if (key === str) return true;
-    }
-    return false;
+    return str in obj;
 }
 
 const obj1 = {
@@ -12,3 +9,5 @@ const obj1 = {
 };
 
 isHasPropety('height', obj1); //true
+
+// Задание выполнено верно, но код функции можно упростить, выше показала как
